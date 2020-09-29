@@ -1,0 +1,87 @@
+.navbar{
+  background-color: black;
+  border-bottom: rgb(21, 53, 75) 5px solid;
+}
+
+.navbar .nav-link {
+  font-size: 13px;
+  text-transform: uppercase;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.navbar .nav-item .active{
+  border-radius: 25px;
+  background: #2a4a50;
+}
+ 
+.navbar-brand h3 {
+  font-family: 'Tangerine', serif;
+  text-shadow: 4px 4px 4px rgb(255, 255, 255);
+}
+
+#Biography {
+    padding-top: 110px;
+}
+.h4.text-justify.Biography{
+  font-family: 'Calibri';
+}
+
+#Skills, #contactme{
+  background-color: #f7f7f7;
+}
+
+#jet-icon:hover {
+  font-size: x-large;
+}
+
+.netwrok-icons a:hover {
+   font-size: 19px;
+   opacity: 0.8;
+}
+
+#hello {
+  background: rgb(218, 218, 226);
+}
+
+section .footTitle {
+  font-family: 'Tangerine', serif;
+  font-size: 50px;
+  text-shadow: 5px 5px 5px rgb(224, 14, 14);
+}
+
+.fa-beat {
+  animation:fa-beat 5s ease infinite;
+}
+
+@keyframes fa-beat {
+  0% {
+    transform:scale(1);
+  }
+  5% {
+    transform:scale(1.25);
+  }
+  20% {
+    transform:scale(1);
+  }
+  30% {
+    transform:scale(1);
+  }
+  35% {
+    transform:scale(1.25);
+  }
+  50% {
+    transform:scale(1);
+  }
+  55% {
+    transform:scale(1.25);
+  }
+  70% {
+    transform:scale(1);
+  }
+}
+
+#footer {
+  background-image: url('../images/footer.png');
+  background-repeat: repeat-x;
+}
