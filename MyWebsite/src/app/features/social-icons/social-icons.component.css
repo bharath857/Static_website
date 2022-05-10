@@ -1,0 +1,36 @@
+.social-icons {
+    list-style-type: none;
+    display: flex;
+}
+
+.linkedin,
+.github,
+.mail,
+.twitter,
+.whatsapp {
+    margin-right: 2rem;
+}
+
+.linkedin {
+    color: rgb(10 102 194)
+}
+
+.github {
+    color: rgb(0, 0, 0);
+}
+
+.mail {
+    color: #f75d29
+}
+
+.twitter {
+    color: #01aaed;
+}
+
+.whatsapp {
+    color: rgb(29, 226, 62);
+}
+
+
+
+

@@ -1,0 +1,45 @@
+<header class="sticky">
+    <nav class="navigation-bar">
+        <div class="nav-header">
+            <h3 class="name-first"> Bharath J &nbsp;</h3>
+            <h3 class="name-last">Reddy </h3>
+        </div>
+
+        <div class="nav-links">
+            <ng-container *ngTemplateOutlet="links"></ng-container>
+        </div>
+
+        <div class="nav-ham">
+            <button *ngIf="!closemenu" class="navbar-toggler" type="button" (click)="onHamOpen()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <button *ngIf="closemenu" class="navbar-toggler" type="button" (click)="onHamClose()">
+                <i class="far fa-times-circle"></i>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<div *ngIf="closemenu" class="on-ham-open">
+    <ng-container *ngTemplateOutlet="links"></ng-container>
+</div>
+<ng-template #links>
+    <ul class="links">
+        <li>
+            <a routerLink="home" (click)="onHamClose()" >Home</a>
+        </li>
+        <li>
+            <a routerLink="contact" (click)="onHamClose()">About</a>
+        </li>
+        <li>
+            <a routerLink="contact" (click)="onHamClose()">Projects</a>
+        </li>
+        <li>
+            <a routerLink="contact" (click)="onHamClose()">Contact</a>
+        </li>
+    </ul>
+    <div class="social-icons" *ngIf="closemenu">
+        <app-social-icons></app-social-icons>
+    </div>
+  
+</ng-template>
