@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-social-icons',
@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./social-icons.component.css']
 })
 export class SocialIconsComponent implements OnInit {
-
-  constructor() { }
+  @Input() size: number = 2;
+  iconssize: string = '';
+  constructor() {
+  }
 
   ngOnInit(): void {
+    this.iconssize = 'fa-' + this.size + 'x';
   }
 
 }

@@ -8,6 +8,7 @@ import { MatSnackBarType, SnakbarService } from 'src/app/shared/utilities/snackb
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+
   userInfo: FormGroup;
   constructor(private formBuilder: FormBuilder,
     private snakbar: SnakbarService) {
