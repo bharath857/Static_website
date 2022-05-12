@@ -28,9 +28,10 @@
     }
 
     .user-lg-img {
-        width: 25rem;
+        width: 20rem;
         height: 30rem;
         position: relative;
+        border-radius: 1rem;
     }
 
 }

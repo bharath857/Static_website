@@ -14,6 +14,8 @@ import { HomeComponent } from './features/home/home.component';
 import { CommonModule } from '@angular/common';
 import { SocialIconsComponent } from './features/social-icons/social-icons.component';
 import { MaterialModule } from './shared/material/material.module';
+import { AboutComponent } from './features/about/about.component';
+import { ServicesComponent } from './features/services/services.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { MaterialModule } from './shared/material/material.module';
     FooterComponent,
     ContactComponent,
     HomeComponent,
-    SocialIconsComponent
+    SocialIconsComponent,
+    AboutComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
