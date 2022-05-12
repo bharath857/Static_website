@@ -13,6 +13,7 @@ import { ContactComponent } from './features/contact/contact.component';
 import { HomeComponent } from './features/home/home.component';
 import { CommonModule } from '@angular/common';
 import { SocialIconsComponent } from './features/social-icons/social-icons.component';
+import { MaterialModule } from './shared/material/material.module';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { SocialIconsComponent } from './features/social-icons/social-icons.compo
     AppRoutingModule,
     HttpClientModule,
     CommonModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
