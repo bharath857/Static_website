@@ -31,6 +31,6 @@
     color: rgb(29, 226, 62);
 }
 
-
-
-
+ul {
+    padding-left: 0;
+}
