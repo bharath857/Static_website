@@ -4,33 +4,20 @@
             <h1 class="text-center text-muted contact-tilte">Contact Me</h1>
         </div>
         <div class="row">
-            <div class="col-sm-6">
-                <div id="myalert" class="alert alert-warning collapse" role="alert">
-                    <strong id="myalertancor"> I know your in hurray!!! But Please fill all fields!</strong>
-                    <button type="button" class="close" aria-label="Close">
-                        <span id="myalertancor1" aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div id="myalert2" class="alert alert-success collapse" role="alert">
-                    <strong>Success!</strong> I have Recived Your Message. Thanks!.
-                    <button type="button" class="close" aria-label="Close">
-                        <span id="myalertancor2" aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-
+            <div class="col-sm-5">
                 <form [formGroup]="userInfo">
                     <div class="userinfo">
                         <div class="user-inputs">
                             <div class="name" style="margin-bottom: 2rem;">
-                                <input class="form-control"
-                                type="text" placeholder="Full Name" id="name" formControlName="name" name="entry.813683840"
+                                <input class="form-control" type="text" placeholder="Full Name" id="name"
+                                    formControlName="name" name="entry.813683840"
                                     style="padding: 15px 20px;border-radius: 10px;">
 
                                 <span class="is-invalid"
                                     *ngIf="this.userInfo.get('name')?.touched && (this.userInfo.get('name')?.errors?.['required'])">
                                     Name is required
                                 </span>
-                                <span class="invalid-feedback"
+                                <span class="is-invalid"
                                     *ngIf="this.userInfo.get('name')?.touched && (this.userInfo.get('name')?.errors?.['minlength'])">
                                     Minmium length 5 characters
                                 </span>
@@ -40,17 +27,30 @@
                                 <input class="form-control" type="text" placeholder="Email Address" id="email"
                                     formControlName="email" name="entry.1517567092"
                                     style="padding: 15px 20px;border-radius: 10px;">
+                                <span class="is-invalid"
+                                    *ngIf="this.userInfo.get('email')?.touched && (this.userInfo.get('email')?.errors?.['required'])">
+                                    Email id is required.
+                                </span>
+                                <span class="is-invalid"
+                                    *ngIf="this.userInfo.get('email')?.touched && (this.userInfo.get('email')?.errors?.['email'])">
+                                    Please give valid email id.
+                                </span>
                             </div>
 
                             <div class="phoneNumber" style="margin-bottom: 2rem;">
                                 <input class="form-control" type="number" placeholder="Phone Number" id="phoneNumber"
                                     formControlName="phoneNumber" style="padding: 15px 20px;border-radius: 10px;">
+                                <span class="text-muted">*Optional</span>
                             </div>
 
                             <div class="Message" style="margin-bottom: 2rem;">
                                 <textarea class="form-control" type="text" placeholder="Message" id="message" rows="4"
                                     formControlName="message" name="entry.1770982915"
                                     style="padding: 15px 20px;border-radius: 10px;"></textarea>
+                                <span class="is-invalid"
+                                    *ngIf="this.userInfo.get('Message')?.touched && (this.userInfo.get('Message')?.errors?.['required'])">
+                                    Message is required.
+                                </span>
                             </div>
                         </div>
                         <div class="submit-element">
@@ -60,13 +60,18 @@
                     </div>
                 </form>
             </div>
-            <div class="col-sm-1 "></div>
-            <div class="col-sm-4" style="text-align: center;">
-                <!--  <img class="img-fliud mb-3 rounded-circle" src="./images/myProfilePic1.jpg"
-                    style="border:5px solid rgb(90, 57, 57)" alt="My Profile Pic" width="250" height="200"> -->
-                <app-social-icons></app-social-icons>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4">
+                <img class="img-fliud mb-3 rounded-circle" src="../assets/Baymax_KHIII.png"
+                    style="border:5px solid rgb(90, 57, 57)" alt="My Profile Pic" width="370" height="350">
                 <br>
-                <h2 class="text-muted" style="text-align: center;">+ 91 9886752489</h2>
+                <br>
+                <br>
+                <div>
+                    <app-social-icons></app-social-icons>
+
+                    <h2 class="text-muted" style="margin-left:2rem ;">+ 91 9886752489</h2>
+                </div>
             </div>
         </div>
     </div>

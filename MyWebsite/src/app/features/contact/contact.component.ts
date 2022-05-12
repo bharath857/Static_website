@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { SnakbarService } from 'src/app/shared/utilities/snackbar/snakbar.service';
+import { MatSnackBarType, SnakbarService } from 'src/app/shared/utilities/snackbar/snakbar.service';
 
 @Component({
   selector: 'app-contact',
@@ -23,7 +23,6 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
   validateForm() {
-    console.log(this.userInfo, this.userInfo.get('name')?.touched ,  (this.userInfo.get('name')?.errors?.['required']))
     if (this.userInfo.valid) {
       console.log('submitted')
       var form = document.createElement('form')
@@ -59,6 +58,8 @@ export class ContactComponent implements OnInit {
       form.getAttribute
       form.submit()
       document.body.removeChild(form)
+    } else {
+      this.snakbar.showSnakBar('Please give valid inputs', MatSnackBarType.info)
     }
   }
 

@@ -35,3 +35,7 @@ Variables
 .body {
     font-family: 'Open Sans', sans-serif;
 }
+
+.is-invalid{
+    color: red;
+}
