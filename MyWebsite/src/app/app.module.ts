@@ -16,6 +16,10 @@ import { SocialIconsComponent } from './features/social-icons/social-icons.compo
 import { MaterialModule } from './shared/material/material.module';
 import { AboutComponent } from './features/about/about.component';
 import { ServicesComponent } from './features/services/services.component';
+import { ProjectDetailsComponent } from './features/project-details/project-details.component';
+import { ProjectsComponent } from './features/project-details/projects/projects.component';
+import { SkillsComponent } from './features/skills/skills.component';
+import { TimelineComponent } from './features/timeline/timeline.component';
 
 
 @NgModule({
@@ -27,7 +31,11 @@ import { ServicesComponent } from './features/services/services.component';
     HomeComponent,
     SocialIconsComponent,
     AboutComponent,
-    ServicesComponent
+    ServicesComponent,
+    ProjectDetailsComponent,
+    ProjectsComponent,
+    SkillsComponent,
+    TimelineComponent
   ],
   imports: [
     BrowserModule,
