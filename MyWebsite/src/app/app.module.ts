@@ -17,7 +17,6 @@ import { MaterialModule } from './shared/material/material.module';
 import { AboutComponent } from './features/about/about.component';
 import { ServicesComponent } from './features/services/services.component';
 import { ProjectDetailsComponent } from './features/project-details/project-details.component';
-import { ProjectsComponent } from './features/project-details/projects/projects.component';
 import { SkillsComponent } from './features/skills/skills.component';
 import { TimelineComponent } from './features/timeline/timeline.component';
 
@@ -33,7 +32,6 @@ import { TimelineComponent } from './features/timeline/timeline.component';
     AboutComponent,
     ServicesComponent,
     ProjectDetailsComponent,
-    ProjectsComponent,
     SkillsComponent,
     TimelineComponent
   ],

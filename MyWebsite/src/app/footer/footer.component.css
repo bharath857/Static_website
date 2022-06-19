@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Sarala:700|Exo+2:300');
+
 .footer {
     padding-bottom: 2rem;
     background: #473838;
-    display: grid;
-    place-items: center;
     color: #f3b6b6;
+}
+.footTitle{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 30px;
+    text-shadow: 5px 5px 5px rgb(224 14 14);
 }

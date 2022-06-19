@@ -1,0 +1,83 @@
+.section-title {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+/*
+=============== 
+Skills
+===============
+*/
+@media screen and (min-width: 768px) {
+  .skills-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 2rem;
+    -moz-column-gap: 2rem;
+    column-gap: 2rem;
+  }
+}
+.section-center {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.skills {
+  background: fffefe;
+}
+
+.skills h3 {
+  margin: 1.5rem 0;
+  color: hsl(43, 86%, 17%);
+}
+
+.skill {
+  margin-bottom: 1.25rem;
+}
+
+.skill p {
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  color: hsl(43, 86%, 17%);
+}
+
+.skill-container {
+  background: #e5dada;
+  height: 1rem;
+  width: 100%;
+  border-radius:  0.5rem;
+  position: relative;
+}
+
+.skill-value {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: hsl(27deg 62% 73%);
+  height: 100%;
+  width: 70%;
+  border-radius:  0.5rem;
+}
+
+.value-70 {
+  width: 70%;
+}
+
+.value-80 {
+  width: 80%;
+}
+
+.skill-text {
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.skill-text-70 {
+  left: 70%;
+}
+
+.skill-text-80 {
+  left: 80%;
+}
