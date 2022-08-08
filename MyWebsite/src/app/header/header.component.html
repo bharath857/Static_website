@@ -25,16 +25,16 @@
 <ng-template #links>
     <ul class="links">
         <li>
-            <a routerLink="home" (click)="onHamClose()" >Home</a>
+            <h3 class="name-first links-mob" style="font-size:1.3rem ;"><a routerLink="home" (click)="onHamClose()">Home</a> </h3>
         </li>
         <li>
-            <a routerLink="contact" (click)="onHamClose()">About</a>
+            <h3 class="name-first links-mob" style="font-size:1.3rem ;"><a routerLink="about" (click)="onHamClose()">About</a></h3>
         </li>
         <li>
-            <a routerLink="contact" (click)="onHamClose()">Projects</a>
+            <h3 class="name-first links-mob" style="font-size:1.3rem ;">  <a routerLink="projects" (click)="onHamClose()">Projects</a></h3>
         </li>
         <li>
-            <a routerLink="contact" (click)="onHamClose()">Contact</a>
+            <h3 class="name-first links-mob" style="font-size:1.3rem ;"> <a routerLink="contact" (click)="onHamClose()">Contact</a></h3>
         </li>
     </ul>
     <div class="social-icons" *ngIf="closemenu">

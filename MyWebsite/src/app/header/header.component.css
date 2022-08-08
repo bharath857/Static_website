@@ -32,6 +32,10 @@
     .nav-links {
         display: none;
     }
+
+    .links-mob {
+        margin-top: 2rem;
+    }
 }
 
 .nav-header {
