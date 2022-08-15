@@ -19,7 +19,7 @@ import { ServicesComponent } from './features/services/services.component';
 import { ProjectDetailsComponent } from './features/project-details/project-details.component';
 import { SkillsComponent } from './features/skills/skills.component';
 import { TimelineComponent } from './features/timeline/timeline.component';
-
+import { ResumeComponent } from './shared/resume/resume.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +33,8 @@ import { TimelineComponent } from './features/timeline/timeline.component';
     ServicesComponent,
     ProjectDetailsComponent,
     SkillsComponent,
-    TimelineComponent
+    TimelineComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,

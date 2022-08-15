@@ -7,18 +7,16 @@
   <meta name="theme-color" content="rgb(3, 175, 255)">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <link rel="stylesheet" href="css/sty.css">
-
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/flipStyle.css">
+ 
   <title>Bharath J Reddy</title>
 </head>
-
 <body>
   <!------------ --------------------------------------------------------------------------------------------
         navigation bar Details
@@ -27,43 +25,51 @@
   <section>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="main-nav">
       <a class="navbar-brand pl-3" href="#">
-        <img class="rounded-circle" src="./images/myProfilePic1.jpg" alt="theme picture" width="40" height="30"
-          style="border: rgb(219, 72, 4) 1px solid;">
-        <h3 class="d-inline align-middle pl-3"> Bharath J Reddy</h3>
+        <img class="rounded-circle" src="./images/myProfole2.jpg" 
+        alt="theme picture" width="40" height="40" 
+        style="border: rgb(219, 72, 4) 1px solid;">
+        <h3 class="d-inline align-middle pl-3" >  Bharath J Reddy</h3>
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" 
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+        aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#Biography">Home</a>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+        <ul class="navbar-nav ml-auto ">
+          <li class="nav-item" >
+            <a class="nav-link" href="#Biography" id="homenav" data-target="#Biography">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Skills">Skills</a>
+            <a class="nav-link" href="#Skills" id="homenav1" >Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Projects">Projects</a>
+            <a class="nav-link" href="#Projects" id="homenav2">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./files/Bharath_Resume-converted.pdf" target="_blank">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#contact" id="homenav3" >Contact</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              <i> Swap a Theme</i>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i id="homenav4"> Resume</i>
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#" onclick="ChangeTheme('rgb(255, 255, 255)')">Light</a>
-              <a class="dropdown-item" href="#" onclick="ChangeTheme('#141622')">Dark</a>
-              <a class="dropdown-item" href="#">Automatic</a>
+              <a class="dropdown-item" href="./files/index.html" target="_blank">Resume Web format</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something to add</a>
+              <a class="dropdown-item" href="./files/Bharath J Reddy.pdf" target="_blank">Download Resume</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i id="homenav5"> Swap a Theme</i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./index.html">Actual Theme</a>
+              <a class="dropdown-item" href="#" onclick = "ChangeTheme('rgb(255, 255, 255)')">Light</a>
+              <a class="dropdown-item" href="#" onclick = "ChangeTheme('#141622')">Dark</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#" target="_blank">Placeholder</a>
             </div>
           </li>
         </ul>
@@ -74,35 +80,37 @@
           Biography
   ---- ----------------------------------------------------------------------------------------------------->
   <section id="Biography">
-    <div class="container">
+    <div class="addmargin">
       <div class="row">
         <div class="col-12 col-lg-4 text-center">
-          <img class="img-fliud mb-3 rounded-circle" src="./images/myProfilePic1.jpg"
-            style="border:5px solid rgb(90, 57, 57)" alt="My Profile Pic" width="350" height="300">
-
-          <div class="Role">
-            <p class="h2">Bharath J Reddy</p>
-            <p class="h5">Aspiring Full Stack/MERN Stack/MEAN Stack Developer</p>
-          </div>
-          <br>
-          <div class="netwrok-icons">
-            <a href="https://in.linkedin.com/in/bharath857" target="_blank">
-              <i class="fa fa-linkedin-square fa-3x mx-3" style="color:rgb(33, 207, 207)"></i>
-            </a>
-            <a href="https://github.com/bharath857" target="_blank">
-              <i class="fa fa-github fa-3x mx-3" style="color:rgb(0, 0, 0)"></i>
-            </a>
-            <a href="mailto:bharath.reddy.857@gmail.com" target="_blank">
-              <i class="fa fa-google-plus-square fa-3x mx-3" style="color:rgb(197, 64, 64)"></i>
-            </a>
-            <a href="https://twitter.com/Bharath26673523" target="_blank">
-              <i class="fa fa-twitter-square fa-3x mx-3" style="color:rgb(48, 28, 158)"></i>
-            </a>
-          </div>
-
-          <!-- <div class="text-center">
+              <img class="img-fliud mb-3 rounded-circle"
+              src="./images/myProfole2.jpg" 
+              style="border:5px solid rgb(90, 57, 57)"
+              alt="My Profile Pic" width="400" height="350" >
+          
+              <div class="Role">
+                <p class="h2">Bharath J Reddy</p>
+                <p class="h5">Aspiring Full Stack/MERN Stack/MEAN Stack Developer</p>
+              </div>
+              <br>
+              <div class="netwrok-icons">
+                <a href="https://in.linkedin.com/in/bharath857" target="_blank" data-toggle="tooltip" title="Linkedin"> 
+                  <i class="fa fa-linkedin-square fa-3x mx-3" style="color:rgb(33, 207, 207)"></i>
+                </a>
+                <a href="https://github.com/bharath857" target="_blank" data-toggle="tooltip" title="GitHub">
+                  <i class="fa fa-github fa-3x mx-3" style="color:rgb(0, 0, 0)"></i>
+                </a>
+                <a href="mailto:bharath.reddy.857@gmail.com" target="_blank" data-toggle="tooltip" title="Gmail">
+                  <i class="fa fa-google-plus-square fa-3x mx-3" style="color:rgb(197, 64, 64)"></i>
+                </a>
+                <a href="https://twitter.com/Bharath26673523" target="_blank" data-toggle="tooltip" title="Twitter">
+                  <i class="fa fa-twitter-square fa-3x mx-3" style="color:rgb(48, 28, 158)"></i>
+                </a>
+              </div>
+      
+              <!-- <div class="text-center">
                 <p class="h4 p-4 text-info">Lorem ipsum dolor sit amet.</p>
-              </div>   -->
+              </div>   -->   
         </div>
         <div class="m-4 p-3">
 
@@ -110,27 +118,22 @@
         <div class="col-12 col-lg-7">
           <h1><strong> Biography</strong></h1>
           <br>
-          <p class="h4 text-justify Biography"> I am aspiring software developer intrested to learn, build, scale and
-            deploy applications End to End. I am ambitious and adventurous and also exicted to be at the learning phase
-            of my career to learn and explore new things.</p>
+          <p class= "h4 text-justify Biography">I am an aspiring software developer interested to learn, build, scale and deploy applications End to End. I am ambitious and adventurous and also excited to be at the learning phase of my career to learn and explore new things.</p>
           <br>
-          <p class="h4 text-justify" style="font-family: 'Calibri';"> I am currently working as automattion test
-            engineer with proven record of automating manual test cases and in pursuit of my interest towards softawre
-            development I am adding new skills and tech stack which can ebnable me to full fill my aspirations.
+          <p class= "h4 text-justify" style="font-family: 'Calibri';">I am currently working as an automation test engineer with a proven record of automating test cases and in pursuit of my interest towards software development I am adding new skills and tech stack which can enable me to fulfill my aspirations.
           </p>
           <br>
-
-          <p class="h4 text-justify" style="font-family: 'Calibri';">I am intrested towards learning, buliding and
-            scaling software applications by acquiring new skills.</p>
+          
+          <p class= "h4 text-justify" style="font-family: 'Calibri';">I am interested towards learning, building and scaling software applications by acquiring new skills.</p>
           <br>
           <div class="row">
             <div class="col-md-5">
               <h3 class="ml-5"> <strong>Interests </strong></h3>
-              <ul>
-                <li>Full Stack Development</li>
-                <li>Cloud Computing</li>
-                <li>Software Engineering</li>
-              </ul>
+                  <ul>
+                  <li>Full Stack Development</li>
+                  <li>Cloud Computing</li>
+                  <li>Software Engineering</li>
+                </ul>
             </div>
             <div class="col-md-7">
               <h3 class="ml-5"> <strong> Education </strong></h3>
@@ -142,11 +145,12 @@
                   <h5>BE,2017</h5>
                   <p>Dayananda Sagar College of Engineering</p>
                 </div>
-              </div>
+              </div>    
             </div>
-          </div>
         </div>
       </div>
+    </div>
+  </div>
   </section>
   <!------------ --------------------------------------------------------------------------------------------
           Page 2 details- Skills
@@ -156,65 +160,56 @@
     <br>
     <br>
     <div class="container">
-      <p class="display-4">Skills</p>
+      <p class="display-4" >Skills</p>
       <div class="row text-center">
         <div class="col m-3">
           <div class="card-body">
-            <img class="card-img-top img-fliud" src="./images/node.png" alt="Card image cap"
-              style="height:100px;width:150px">
+            <img class="card-img-top img-fliud" src="./images/node.png" alt="Card image cap" style="height:100px;width:150px">
             <h2 class="card-title">Node</h2>
-            <p>Express.js, Socket.io, EJS </p>
+            <p >Express.js, Socket.io, EJS </p> 
           </div>
         </div>
 
         <div class="col m-3">
-          <img class="card-img-top img-fliud" src="./images/db.jpg" alt="Card image cap"
-            style="height:100px;width:150px">
+          <img class="card-img-top img-fliud" src="./images/db.jpg" alt="Card image cap" style="height:100px;width:150px">
           <div class="card-body">
             <h2 class="card-title">Database</h2>
-            <p>Mongo Db </p>
+            <p>Mongo Db </p> 
           </div>
         </div>
 
         <div class="col m-3">
           <div class="card-body">
-            <img class="card-img-top img-fliud" src="./images/Java.webp" alt="Card image cap"
-              style="height:100px;width:150px">
+            <img class="card-img-top img-fliud" src="./images/Java.webp" alt="Card image cap" style="height:100px;width:150px">
             <h2 class="card-title">Java</h2>
-            <p>Core Java, Maven</p>
+            <p>Core Java, Maven</p> 
           </div>
         </div>
-      </div>
+      </div>  
       <!------------------------------------------------------------------------------------------------->
-      <div class="row text-center">
-        <div class="col m-3">
+      <div class="row text-center">  
+      <div class="col m-3">
           <div class="card-body">
-            <img class="card-img-top img-fliud" src="./images/testing.jpg" alt="Card image cap"
-              style="height:100px;width:150px">
+            <img class="card-img-top img-fliud" src="./images/testing.jpg" alt="Card image cap" style="height:100px;width:150px">
             <h2 class="card-title">Selenium</h2>
-            <p>Java, Gradel, Vb Script </p>
+            <p>Java, Gradel, Vb Script </p> 
           </div>
         </div>
 
         <div class="col m-3">
           <div class="card-body">
-            <img class="card-img-top img-fliud" src="./images/angular.png" alt="Card image cap"
-              style="height:100px;width:150px">
+            <img class="card-img-top img-fliud" src="./images/angular.png" alt="Card image cap" style="height:100px;width:150px">
             <h2 class="card-title">Angular</h2>
-            <p>HTML, CSS, Bootstrap</p>
+            <p>HTML, CSS, Bootstrap</p> 
           </div>
         </div>
-
+        
         <div class="col m-3">
           <div class="card-body">
-            <img class="card-img-top img-fliud" src="./images/otherskills.jpeg" alt="Card image cap"
-              style="height:100px;width:150px">
+            <img class="card-img-top img-fliud" src="./images/otherskills.jpeg" alt="Card image cap" style="height:100px;width:150px">
             <h3 class="card-title text-primary">Other Skills</h3>
-            <p>
-            <h6><strong>Version Control</strong>: Git and GitBash <br>
-              <Strong>Methodologies</Strong>: Agile, Kanban, ALM-Waterfall
-            </h6>
-            </p>
+            <p ><h6><strong>Version Control</strong>: Git and GitBash <br> 
+            <Strong>Methodologies</Strong>: Agile, Kanban, ALM-Waterfall</h6></p>
           </div>
         </div>
       </div>
@@ -224,9 +219,9 @@
 
   <!---------------------------------------------------------------------------------------------------------
           Page 3 projects
-  ---------------------------------------------------------------------------------------------------------->
+  ----------------------------------------------------------------------------------------------------------> 
   <section id="Projects">
-    <br>
+    <br> 
     <br>
     <br>
     <div class="container">
@@ -235,19 +230,17 @@
           Projects
         </div>
         <div class="col-9">
-          <div class="row m-5">
+          <div class="row m-5" >
             <div class="col-10">
               <h5><strong>Chatroom</strong></h5>
-              <p>This Project uses socket.io to catch events on users joining and sending the message each message is
-                captured and sent over users chatroom.</p>
+              <p>This Project uses socket.io to catch events on users joining and sending the message each message is captured and sent over users chatroom.</p>
               <div class="btn-links">
-                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/bharath857/Chatroom"
-                  target="_blank" rel="noopener">
-                  <i class="fa fa-github mr-1" style="font-size:20px;"></i>
-                  Code
+                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/bharath857/Chatroom" target="_blank" rel="noopener">
+                <i class="fa fa-github mr-1" style="font-size:20px;"></i>
+                Code
                 </a>
               </div>
-              <small class="text-primary">click here for code</small>
+              <small class="text-primary">Click here for code</small>
             </div>
             <div class="col-2">
               <img src="./images/chatroom.jpg" alt="" style="height:90px;width:150px">
@@ -257,51 +250,98 @@
           <div class="row m-5">
             <div class="col-10">
               <h5><strong>Shopping-website</strong></h5>
-              <p>This project is based on Anugular 2. Each part is divided into components and reused conatins 4 files
-                and shopping-list and recipes of restaurant. Go through the readme file for installtion and starting the
-                project</p>
+              <p>This project is based on Anugular 2. Each part is divided into components and reused conatins 4 files and shopping-list and recipes of restaurant. Go through the readme file for installtion and starting the project</p>
               <div class="btn-links">
-                <a class="btn btn-outline-primary my-1 mr-1 btn-sm"
-                  href="https://github.com/bharath857/Shopping-website" target="_blank" rel="noopener">
-                  <i class="fa fa-github mr-1" style="font-size:20px;"></i>
-                  Code
+                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/bharath857/Shopping-website" target="_blank" rel="noopener">
+                <i class="fa fa-github mr-1" style="font-size:20px;"></i>
+                Code
                 </a>
               </div>
-              <small class="text-primary">click here for code</small>
+              <small class="text-primary">Click here for code</small>
             </div>
             <div class="col-2">
               <img src="./images/restaurant.jpg" alt="" style="height:90px;width:150px">
             </div>
           </div>
-
+          
 
           <div class="row m-5">
             <div class="col-10">
               <h5><strong>Weather-Details</strong></h5>
-              <p>This project helps you find weather anywhere just by giving location. You will getting time Zone and
-                weather condtions of the given place.</p>
+              <p>This project helps you find weather anywhere just by giving location. You will getting time Zone and weather condtions of the given place.</p>
               <div class="btn-links">
-                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/bharath857/WeatherDetails"
-                  target="_blank" rel="noopener">
-                  <i class="fa fa-github mr-1" style="font-size:20px;"></i>
-                  Code
+                <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/bharath857/WeatherDetails" target="_blank" rel="noopener">
+                <i class="fa fa-github mr-1" style="font-size:20px;"></i>
+                Code
                 </a>
               </div>
-              <small class="text-primary">click here for code</small>
+              <small class="text-primary">Click here for code</small>
             </div>
             <div class="col-2">
               <img src="./images/weather.jpg" alt="" style="height:90px;width:150px">
             </div>
           </div>
         </div>
+      </div> 
+    </div>
+  </section> 
+<!---------------------------------------------------------------------------------------------------------
+          Page 3 projects
+ ----------------------------------------------------------------------------------------------------------><!-- 
+  <section id="Projects" class="cards111">
+    <br> 
+    <br>
+    <br>
+    <div class="container">
+      <div class="display-4 mb-5">
+        Projects
+      </div>
+      <div class="content">
+
+        <a class="card" href="https://github.com/bharath857" target="_blank">
+          <div class="front" style="background-image: url(./images/chatroom.jpg); color: rgb(10, 61, 53);">
+            <h1>Chatroom</h1>
+          </div>
+          <div class="back">
+            <div>
+              <p>This Project uses socket.io to catch events on users joining and sending the message each message is captured and sent over users chatroom.</p>
+              <button class="button"><i class="fa fa-github"></i> Click Here for code</button>
+            </div>
+          </div>
+        </a>  
+        
+        <a class="card" href="#!">
+          <div class="front">
+            <h1>Shopping-website</h1>
+          </div>
+          <div class="back">
+            <div>
+              <p>This project is based on Anugular 2. Each part is divided into components and reused and shopping-list. Go through the readme file in the project</p>
+              <button class="button"><i class="fa fa-github"></i> Click Here for code</button>
+            </div>
+          </div>
+        </a> 
+
+        <a class="card" href="#!">
+          <div class="front" style="background-image: url(./images/weather.jpg); color: rgb(68, 24, 24);">
+            <h1>Weather-Details</h1>
+          </div>
+          <div class="back">
+            <div>
+              <p>This project helps you find weather anywhere just by giving location. You will getting time Zone and weather condtions of the given place.</p>
+              <button class="button"><i class="fa fa-github"></i> Click Here for code</button>
+            </div>
+          </div>
+        </a> 
+
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!------------ --------------------------------------------------------------------------------------------
         Page 4 contact Me
-  ---------------------------------------------------------------------------------------------------------->
-  <section id="contact" class="bg-light py-5">
+  ----------------------------------------------------------------------------------------------------------> 
+  <section class="py-5"  id="contact" style="background-color: rgb(247, 247, 247);" >
     <br>
     <div class="container">
       <div class="row">
@@ -309,14 +349,49 @@
           <h3 class="display-4">Contact Me</h3>
           <p>Drop me a message, I will reach out to you.</p>
 
-          <form id="contactform">
+
+          <div id="myalert" class="alert alert-warning collapse" role="alert">
+            <strong id="myalertancor" > I know your in hurray!!! But Please fill all fields!</strong> 
+            <button type="button" class="close" aria-label="Close">
+              <span id="myalertancor1" aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div id="myalert2" class="alert alert-success collapse" role="alert">
+            <strong>Success!</strong> I have Recived Your Message. Thanks!.
+            <button type="button" class="close" aria-label="Close">
+              <span id="myalertancor2"aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <script type="text/javascript">var submitted=false;</script>
+
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+          onload="if(submitted) {
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('message').value = '';
+           
+            $('#myalert2').show('fade');
+              setTimeout(function(){
+              $('#myalert2').hide('fade');
+              },5000);
+
+              $('#myalertancor2').click(function(){
+                  $('#myalert2').hide('fade');
+              }) 
+              
+          }"
+          
+          ></iframe> 
+          
+          <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfihk4W-pjuloyJg9lDXB2yfWk6udEVNXq9rAqxeuXh3OQ1dA/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
             <div class="input-group input-group-sm mb-3">
               <div class="input-group-prepend">
                 <span class="input-group-text">
                   <i class="fas fa-user"></i>
                 </span>
               </div>
-              <input type="text" class="form-control" id="name" placeholder="Name">
+              <input class="form-control" type="text" placeholder="Name" id="name" required name="entry.813683840">
             </div>
 
             <div class="input-group input-group-sm">
@@ -325,39 +400,39 @@
                   <i class="fas fa-envelope"></i>
                 </span>
               </div>
-              <input type="email" class="form-control" id="email" placeholder="Email">
+              <input class="form-control" type="text" placeholder="Email" id="email" required name="entry.1517567092">
             </div>
-            <small class=" text-muted">Your email will not ever be shared</small>
             <div class="input-group input-group-sm my-3">
               <div class="input-group-prepend">
                 <span class="input-group-text">
                   <i class="fas fa-pencil-alt"></i>
                 </span>
               </div>
-              <textarea type="text" placeholder="Message" class="form-control" id="message"></textarea>
+              <textarea class="form-control" type="text" placeholder="Message" id="message" required name="entry.1770982915"></textarea>
             </div>
-            <input id="btn-sucess" type="submit" value="Submit" class="btn btn-primary btn-block btn-lg">
+      
+            <div class="w3-section">
+              <button id="btn-sucess" type="submit" value="Submit" class="btn btn-primary btn-block btn-lg">Submit</button>
+            </div>
           </form>
         </div>
         <div class="col-sm-1 ">
-
-        </div>
+          
+      </div>
         <div class="col-sm-4" style="text-align: center;">
-          <img class="img-fliud mb-3 rounded-circle" src="./images/myProfilePic1.jpg"
-            style="border:5px solid rgb(90, 57, 57)" alt="My Profile Pic" width="250" height="200">
-          <ul class="netwrok-icons">
-            <li class="d-inline-block mx-3"><a href="https://in.linkedin.com/in/bharath857" target="_blank"><i
-                  class="fa fa-linkedin-square fa-2x" style="color: rgb(41, 129, 201);"></i></a></li>
-            <li class="d-inline-block mx-3"><a href="https://api.whatsapp.com/send?phone=+919886752489"
-                target="_blank"><i class="fa fa-whatsapp fa-2x" style="color: rgb(29, 226, 62);"></i></a></li>
-            <li class="d-inline-block mx-3"><a href="https://twitter.com/Bharath26673523" target="_blank"><i
-                  class="fa fa-twitter-square fa-2x" style="color: rgb(67, 80, 192);"></i></a></li>
-            <li class="d-inline-block mx-3"><a href="mailto:bharath.reddy.857@gmail.com" target="_blank"><i
-                  class="fa fa-envelope-o fa-2x" style="color: rgb(167, 49, 40);"></i></a></li>
-
-          </ul>
-          <br>
-          <h2 class="text-muted">+ 91 9886752489</h2>
+            <img class="img-fliud mb-3 rounded-circle"
+            src="./images/myProfilePic1.jpg" 
+            style="border:5px solid rgb(90, 57, 57)"
+            alt="My Profile Pic" width="250" height="200" >
+              <ul class="netwrok-icons">
+                <li class="d-inline-block mx-3"><a href="https://in.linkedin.com/in/bharath857" target="_blank" data-toggle="tooltip" title="Linkedin"><i class="fa fa-linkedin-square fa-2x" style="color: rgb(41, 129, 201);"></i></a></li>
+                <li class="d-inline-block mx-3"><a href="https://api.whatsapp.com/send?phone=+919886752489" target="_blank" data-toggle="tooltip" title="Whats-App"><i class="fa fa-whatsapp fa-2x" style="color: rgb(29, 226, 62);"></i></a></li>
+                <li class="d-inline-block mx-3"><a href="https://twitter.com/Bharath26673523" target="_blank" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter-square fa-2x" style="color: rgb(67, 80, 192);"></i></a></li>
+                <li class="d-inline-block mx-3"><a href="mailto:bharath.reddy.857@gmail.com" target="_blank" data-toggle="tooltip" title="Gmail"><i class="fa fa-envelope-o fa-2x" style="color: rgb(167, 49, 40);"></i></a></li>
+                
+              </ul>
+              <br>
+              <h2 class="text-muted">+ 91 9886752489</h2>
         </div>
       </div>
     </div>
@@ -391,7 +466,7 @@
             Bharath J Reddy
           </p>
           <p class="madewithlove">
-            Made with <i class="fa fa-heart fa-beat" style="color: rgb(167, 49, 40);"></i> in India
+            Made  with  <i class="fa fa-heart fa-beat" style="color: rgb(167, 49, 40);"></i> in  India
           </p>
         </div>
         <div class="col">
@@ -400,35 +475,26 @@
             You can find me everywhere
           </p>
           <ul class="netwrok-icons">
-            <li class="d-inline-block mx-3"><a href="https://in.linkedin.com/in/bharath857" target="_blank"><i
-                  class="fa fa-linkedin-square fa-2x" style="color: rgb(41, 129, 201);"></i></a></li>
-            <li class="d-inline-block mx-3"><a href="https://github.com/bharath857" target="_blank"><i
-                  class="fa fa-github fa-2x" style="color: rgb(12, 14, 14);"></i></a></li>
-            <li class="d-inline-block mx-3"><a href="https://twitter.com/Bharath26673523" target="_blank"><i
-                  class="fa fa-twitter-square fa-2x" style="color: rgb(67, 80, 192);"></i></a></li>
-            <li class="d-inline-block mx-3"><a href="mailto:bharath.reddy.857@gmail.com" target="_blank"><i
-                  class="fa fa-envelope-o fa-2x" style="color: rgb(167, 49, 40);"></i></a></li>
+            <li class="d-inline-block mx-3"><a href="https://in.linkedin.com/in/bharath857" target="_blank"><i class="fa fa-linkedin-square fa-2x" style="color: rgb(41, 129, 201);"></i></a></li>
+            <li class="d-inline-block mx-3"><a href="https://github.com/bharath857" target="_blank"><i class="fab fa-github-alt rounded-circle fa-2x" id="giticon1" style="color: rgb(12, 14, 14);"></i></a></li>
+            <li class="d-inline-block mx-3"><a href="https://twitter.com/Bharath26673523" target="_blank"><i class="fa fa-twitter-square fa-2x" style="color: rgb(67, 80, 192);"></i></a></li>
+            <li class="d-inline-block mx-3"><a href="mailto:bharath.reddy.857@gmail.com" target="_blank"><i class="fa fa-envelope-o fa-2x" style="color: rgb(167, 49, 40);"></i></a></li>
           </ul>
         </div>
       </div>
-      <div class="row pb-5" id="footer">
+      <div class="row pb-5" id="footer" >
         <div>
           <br>
         </div>
       </div>
     </div>
   </section>
-
+  
   <script src="./js/main.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   <script>
 
     $('body').scrollspy({ target: '#main-nav' });
@@ -452,13 +518,7 @@
         });
       }
     });
-    /*********************8* Change Theme or background colour ***************************/
-    function ChangeTheme(color) {
-      document.body.style.background = color;
-    }
-    /************************************************************************************/
   </script>
 
 </body>
-
 </html>
