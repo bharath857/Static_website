@@ -118,3 +118,25 @@
     z-index: 2;
     box-shadow: var(--light-shadow);
 }
+
+.HOVER {
+    border: solid 7px #000;
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    width: 300px;
+  }
+  
+  .HOVER:hover a:before {
+    content: attr(data-hover);
+    color: red;
+    display: block;
+    background: #000;
+    position: absolute;
+    top: 100%;
+    left: -7px;
+    right: -7px;
+    padding: 15px; 
+  }

@@ -95,6 +95,9 @@
     .projects-center {
         grid-template-columns: repeat(3, 1fr);
     }
+    .special {
+        width: 50%;
+    }
 }
 
 @media screen and (min-width: 1170px) {

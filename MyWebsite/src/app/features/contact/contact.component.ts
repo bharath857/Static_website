@@ -28,37 +28,38 @@ export class ContactComponent implements OnInit {
       console.log('submitted')
       var form = document.createElement('form')
       document.body.appendChild(form);
-      form.action = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSfss5FIrUGLXa19qYI-3niFs0f3Z-FvWcoRmG1-ct9frF-xBQ/formResponse'
+      form.action = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSfUXFIgf2GiijWuv38ftiQp9FGxDPWovbXpAnPN9oaTwd8A5w/formResponse'
       form.setAttribute('method', 'post')
-      form.target = 'hidden'
+      form.target = '_self'
 
       var input1 = document.createElement("input");
       input1.type = "text";
-      input1.name = 'entry.1274444218';
+      input1.name = 'entry.1265744830';
       input1.value = this.userInfo.get('name')?.value;
       form.appendChild(input1);
 
       var input1 = document.createElement("input");
       input1.type = "text";
-      input1.name = 'entry.1546093609';
+      input1.name = 'entry.1234728905';
       input1.value = this.userInfo.get('email')?.value;
       form.appendChild(input1);
 
       var input1 = document.createElement("input");
       input1.type = "number";
-      input1.name = 'entry.444940794';
+      input1.name = 'entry.1545450047';
       input1.value = this.userInfo.get('phoneNumber')?.value;
       form.appendChild(input1);
 
       var input1 = document.createElement("input");
       input1.type = "text";
-      input1.name = 'entry.1330958195';
+      input1.name = 'entry.200168837';
       input1.value = this.userInfo.get('message')?.value;
       form.appendChild(input1);
       console.log(form)
       form.getAttribute
       form.submit()
       document.body.removeChild(form)
+     window.location.href = 'https://bharathj.com'
     } else {
       this.snakbar.showSnakBar('Please give valid inputs', MatSnackBarType.info)
     }
