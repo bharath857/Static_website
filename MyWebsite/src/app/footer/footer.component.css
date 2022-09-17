@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Sarala:700|Exo+2:300');
 
+@media screen and (max-width: 800px) {
+    .canfind {
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .canfind {
+        margin-top: 1.5rem;
+    }
+}
+
 .footer {
     padding-bottom: 2rem;
     background: #473838;
@@ -9,4 +21,8 @@
     font-family: Brush Script MT, Brush Script Std, cursive;
     font-size: 30px;
     text-shadow: 5px 5px 5px rgb(224 14 14);
+}
+
+.text-canfind{
+    margin-left: 2.5rem;
 }

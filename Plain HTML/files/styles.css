@@ -207,7 +207,7 @@ body {
 }
 
 .right_inner .education{
-	margin-top: 30px;
+	margin-top: 5px;
 }
 
 .right_inner .li_wrap{
@@ -216,7 +216,7 @@ body {
 }
 
 .right_inner .li_wrap .date {
-    width: 125px;
+    width: 100px;
     color: #9153c9;
 }
 
@@ -233,11 +233,11 @@ body {
 .right_inner .li_wrap .info_com{
 	font-weight: 300;
 	font-size: 14px;
-	margin-top: 3px;
+	margin-top: 2px;
 }
 
 .right_inner .li_wrap .info_cont{
-	margin-top: 15px;
+	margin-top: 8px;
 }
 
 .right_inner .li_wrap .info:before{
@@ -259,4 +259,8 @@ body {
 	width: 2px;
 	height: 90%;
 	background: #9153c9;
+}
+
+.linespace{
+	margin-bottom: 7px;
 }
